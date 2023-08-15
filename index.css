@@ -1,40 +1,99 @@
 /* Write your code here. */
+* {
+  box-sizing: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
   background-image: url("https://assets.ccbp.in/frontend/react-js/congrats-card-bg.png");
   background-size: cover;
+  min-height: 100vh;
 }
-.main-heading{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Roboto';
-    color: : #0f172a;
+
+.main-heading {
+  color: #0f172a;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
 }
-.cards-container{
-    height: 90px;
-    width: 60px;
-    background-color: #cffafe;
+
+@media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 64px;
+  }
 }
-.profile-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cffafe;
+  width: 80%;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 18px;
 }
-.heading{
-    font-size: 25px;
-    font-family: 'Roboto';
-    color: : #0f172a;
+
+@media screen and (min-width: 768px) {
+  .cards-container {
+    width: 50%;
+    padding: 48px;
+    margin-top: 24px;
+  }
 }
-.description{
-    font-size: 20px;
-    font-family: 'Roboto';
-    color: : #0f172a;
+
+@media screen and (min-width: 992px) {
+  .cards-container {
+    width: 40%;
+  }
 }
-.watch-img{
-    height: 40px;
-    width: 40px;
+
+@media screen and (min-width: 1200px) {
+  .cards-container {
+    width: 30%;
+  }
+}
+
+.profile-img {
+  width: 145px;
+  height: 145px;
+}
+
+.heading {
+  color: #1e293b;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+
+.description {
+  text-align: center;
+  color: #1e293b;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+.watch-img {
+  margin-top: 24px;
 }
